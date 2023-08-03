@@ -19,7 +19,7 @@ public class UserService implements UserDetailsService {
     Logger logger = LoggerFactory.getLogger(getClass());
 
     /**
-     * spring提供的加密算法，该算法只能验证不嫩解密
+     * spring提供的加密算法，该算法只能验证不能解密
      */
     @Autowired
     PasswordEncoder passwordEncoder;

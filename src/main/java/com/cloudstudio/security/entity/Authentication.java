@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 /**
- * 定义跳转页面等常亮
+ * yml中获取常亮
  */
 @ConfigurationProperties(prefix = "authentication")
 @Component

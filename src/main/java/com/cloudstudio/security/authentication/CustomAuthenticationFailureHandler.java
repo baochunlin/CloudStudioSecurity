@@ -23,6 +23,7 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
             HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
         // 认证失败响应JSON字符串，
         Result result = Result.build(HttpStatus.UNAUTHORIZED.value(), exception.getMessage());
+        //此处指定返回对象为json，也可以改为返回值
         response.setContentType("application/json;charset=UTF-8");
         response.getWriter().write(result.toJsonString());
     }
