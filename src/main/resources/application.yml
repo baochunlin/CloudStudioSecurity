@@ -1,0 +1,14 @@
+server:
+  port: 80
+spring:
+  thymeleaf:
+    cache: false #关闭thymeleaf缓存
+authentication:
+  loginPage: /login/page
+  loginProcessingUrl: /login/form # 登录表单提交处理的url
+  username: name # 登录表单提交的用户名的属性名
+  password: pwd  # 登录表单提交的密码的属性名
+  staticPaths: # 静态页面放弃拦截
+  - /dist/**
+  - /modules/**
+  - /plugins/**
