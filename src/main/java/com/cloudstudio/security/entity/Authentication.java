@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 /**
- * yml中获取常亮
+ * yml中获取常量
  */
 @ConfigurationProperties(prefix = "authentication")
 @Component
